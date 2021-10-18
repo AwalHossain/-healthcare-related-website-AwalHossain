@@ -1,0 +1,56 @@
+.text-gray {
+  position: relative;
+  display: block;
+  font-weight: 700;
+  font-size: 25px;
+  color: #a9a9a9;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.package {
+  max-width: fit-content;
+}
+h3 {
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+.price {
+  position: relative;
+  font-size: 72px;
+  line-height: 67px;
+  color: #fb8755;
+  font-weight: 700;
+  margin-bottom: 0px;
+  margin-bottom: 50px;
+}
+.usd {
+  color: #a9a9a9;
+  font-weight: 500;
+}
+.desc {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+.pack-card {
+  max-width: 350px;
+  margin: 0 auto;
+  border: 1px solid lightgray;
+  background-color: #fff;
+  border-radius: 20px;
+  transition: transform 0.3s;
+}
+.pack-card:hover {
+  transform: translateY(-15px);
+  transition: transform 0.3s;
+}
+.choose-btn {
+  padding: 10px 25px;
+  width: 100%;
+  border-radius: 999px;
+  margin-bottom: 40px;
+}
+.choose-btn:hover {
+  background-color: #fb8755;
+  color: white;
+}

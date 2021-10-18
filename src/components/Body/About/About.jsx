@@ -14,7 +14,7 @@ const About = () => {
                     <div className="video-image-box">
                         <figure className="image mb-0" >
                             {/* <img className="img-fluid" src="https://727512.smushcdn.com/1881491/wp-content/uploads/2016/11/featured-image-4.jpg?lossy=1&amp;strip=1&amp;webp=1" className="img-responsive" alt="" /> */}
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/1sVEYNH8gbk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe className="w-md-50 " width="560" height="315" src="https://www.youtube.com/embed/1sVEYNH8gbk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             {/* <a href="https://www.youtube.com/watch?v=1sVEYNH8gbk" className="overlay-link lightbox-image"><span className="icon flaticon-multimedia"></span></a> */}
                             </figure>
                         <div className="caption-box">“ Watch our video to learn how you can be a part of the health revolution as a Health Coach! “</div>

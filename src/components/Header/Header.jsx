@@ -1,34 +1,45 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css'
-
+import useAuth from '../../Hooks/useAuth.js'
 const Header = () => {
+    const {user, logOut} = useAuth();
+    console.log(user);
     return (
         // Navigaion Bar
         <div className="sticky-top">
-             <nav className="navbar   navbar-expand-lg navbar-light bg-light">
-                <div className="container-fluid ">
-                    <a className="navbar-brand" href="/"><img src="https://727512.smushcdn.com/1881491/wp-content/themes/healthcoach/images/logo.png?lossy=1&strip=1&webp=1" alt="" /></a>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="/navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse " id="navbarTogglerDemo02">
- 
-                        
-                        <ul className="navbar-nav  ms-auto  mb-2 mb-lg-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="https://727512.smushcdn.com/1881491/wp-content/themes/healthcoach/images/logo.png?lossy=1&strip=1&webp=1" alt="" /></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul className="navbar-nav d-flex align-items-center  ms-auto  mb-2 mb-lg-0">
                             <li className="nav-item">
-                            <a className="nav-link text-white " aria-current="page" href="/">Home</a>
+                            <Link className="nav-link text-white"  to="/home">Home</Link>
                             </li>
                             <li className="nav-item">
-                            <a className="nav-link text-white " href="/">Link</a>
+                            <Link className="nav-link text-white"  to="/blog">Blog</Link>
                             </li>
                             <li className="nav-item">
-                            <a className="nav-link text-white" href="/">Services</a>
+                            <Link className="nav-link text-white"  to="/package">Plan</Link>
                             </li>
-
+                            <li className="nav-item">
+                            <Link className="nav-link text-white" to="/services">Services</Link>
+                            </li>
+                            <li className="nav-item">
+                            <Link className="nav-link text-white"  to="/about">About</Link>
+                            </li>
+                            <li>{
+                              user?.email? <button onClick={logOut} className="px-5 fs-5 py-1"><Link to="/login">LogOut</Link></button> :
+                              <button className="px-5 fs-5 py-1 lowercase"><Link to="/login">Log In</Link></button>
+                              }</li>
                         </ul>
-                    </div>
-                </div>
-            </nav>
+    </div>
+  </div>
+</nav>
+
         </div>
     );
 };
