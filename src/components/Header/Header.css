@@ -1,0 +1,21 @@
+.navbar {
+  background: rgba(33, 46, 2, 0.9) !important;
+}
+
+.navbar-nav {
+  z-index: 1000;
+}
+.navbar-nav a {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-size: 700;
+  z-index: 100;
+}
+.navbar-item {
+  font-size: 25px;
+}
+.navbar-toggler {
+  padding: 1px 5px;
+  font-size: 19px;
+  background-color: lightgreen;
+}
