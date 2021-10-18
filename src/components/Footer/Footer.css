@@ -4,12 +4,8 @@
 /* $footer-background-grey: #1a1d20; */
 /* $social-buttons-circle-dark-grey: #1a1d20; */
 
-.col-md-4:nth-child(even) {
-  /* background: blue; */
-}
-.col-md-4:nth-child(odd) {
-  /* // background: red; */
-}
+
+
 
 a {
   color: #6c757d;

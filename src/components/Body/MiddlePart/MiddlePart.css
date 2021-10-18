@@ -1,0 +1,12 @@
+.icon {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 20px 30px;
+
+  background-color: greenyellow;
+}
+.fas {
+  font-size: 38px;
+  margin: 0 auto;
+  color: white;
+}
