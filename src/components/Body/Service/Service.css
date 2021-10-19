@@ -141,14 +141,14 @@ body {
   font-weight: 600;
   line-height: 1.2;
   max-width: fit-content;
-  color: darkorange;
+  color: black;
+  background: #fafaface;
 }
 .copy {
   font-family: var(--font-serif);
   font-size: 1.125rem;
   font-style: italic;
   line-height: 1.35;
-  color: darkorange;
 }
 .btn {
   cursor: pointer;
