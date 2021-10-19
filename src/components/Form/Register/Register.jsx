@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router';
+import Location from '../../../Hooks/Location';
 import useAuth from '../../../Hooks/useAuth'
 const Register = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+    const path = Location();
+    const history = useHistory();
     const handleEmail=(e)=>{
         setEmail(e.target.value)
     }
@@ -10,10 +14,17 @@ const Register = () => {
         setPassword(e.target.value)
     }
     console.log(email, password);
-        const {signInWithGoogle, register} = useAuth();
+        const { register} = useAuth();
     const handleRegistration=(e)=>{
         e.preventDefault();
         register(email, password)
+        .then((result) => {
+            // Signed in 
+            console.log(result.user);
+            history.push(path)
+            // ...
+          })
+          .catch(error=> alert(error.message))
     }
 
     return (
@@ -33,7 +44,7 @@ const Register = () => {
                     <input type="checkbox" class="form-check-input" id="exampleCheck1" />
                     <label class="form-check-label" for="exampleCheck1">Check me out</label>
                 </div>
-                 <button type="submit" onClick={ ()=>{register(email,password)}} class="btn btn-primary">Submit</button>
+                 <button type="submit" onClick={handleRegistration} class="btn btn-primary">Submit</button>
             </div>
         </div>
     );

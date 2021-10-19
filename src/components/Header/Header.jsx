@@ -33,7 +33,7 @@ const Header = () => {
                             </li>
                             <li>{
                               user?.email? <button onClick={logOut} className="px-5 fs-5 py-1"><Link to="/login">LogOut</Link></button> :
-                              <button className="px-5 fs-5 py-1 lowercase"><Link to="/login">Log In</Link></button>
+                              <Link to="/login">                            <button className="px-5 fs-5 py-1 lowercase">Login</button></Link>
                               }</li>
                         </ul>
     </div>

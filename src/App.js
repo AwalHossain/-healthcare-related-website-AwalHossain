@@ -10,6 +10,9 @@ import Package from './components/Body/Package/Package';
 import Login from './components/Form/Login/Login';
 import Register from './components/Form/Register/Register';
 import AuthProvider from './contex/AuthProvider';
+import Services from './components/Body/Services/Services';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import Blog from './components/Body/Blog/Blog';
 function App() {
   return (
     <div className="">
@@ -24,6 +27,12 @@ function App() {
           <Route path="/home">
             <Home></Home>
           </Route>
+          <PrivateRoute path="/services">
+          <Services></Services>
+          </PrivateRoute>
+          <PrivateRoute path="/blog">
+          <Blog></Blog>
+          </PrivateRoute>
           <Route path="/about">
             <About></About>
           </Route>
