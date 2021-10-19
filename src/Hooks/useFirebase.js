@@ -6,18 +6,19 @@ initializeAuth();
 
 const useFirebase = () => {
     const [user, setUser] = useState({});
+    const [isLoading, setLoading] = useState(true)
     const auth = getAuth()
     const googleProvider = new GoogleAuthProvider()
     const signInWithGoogle =()=>{
       return signInWithPopup(auth, googleProvider)
-
+        .finally(()=> setLoading(false))
     }
     const register = (email, password)=>{
        return createUserWithEmailAndPassword(auth, email, password)
     }
     const signInWithEmail=(email,password)=>{
     return    signInWithEmailAndPassword(auth, email, password)
-
+    .finally(()=> setLoading(false))
     }
     useEffect(()=>{
     const unscribed=    onAuthStateChanged(auth, user=>{
@@ -27,6 +28,7 @@ const useFirebase = () => {
             else{
                 setUser({})
             }
+            setLoading(false)
         })
         return ()=> unscribed
     },[])
@@ -38,6 +40,7 @@ const useFirebase = () => {
 
         })
         .catch(error=> alert(error.message))
+        .finally(()=> setLoading(false))
     }
 
     return {
@@ -45,6 +48,7 @@ const useFirebase = () => {
         user,
         logOut,
         register,
+        isLoading,
         signInWithEmail
     }
 

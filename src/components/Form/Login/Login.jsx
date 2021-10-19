@@ -51,8 +51,6 @@ const Login = () => {
 		        <section class="wrapper">
                     <div class="heading">
                         <h1 class="text text-large">Sign In</h1>
-                        <p class="text text-normal">New user? <span><Link to="/register">Create a new account</Link></span>
-                        </p>
                     </div>
                 {/* Login form */}
                     <form>
@@ -66,8 +64,8 @@ const Login = () => {
                             <input onChange={handlePassword} type="password" class="form-control" id="exampleInputPassword1" />
                         </div>
                         <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        <p class="text text-normal">New user? <span><Link to="/register">Create a new account</Link></span>
+                        </p>
                         </div>
                         <button type="submit" onClick={handleLogin} class="btn btn-primary">Submit</button>
                     </form>

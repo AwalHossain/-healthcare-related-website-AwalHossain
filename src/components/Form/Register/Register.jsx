@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router';
+import { Link } from 'react-router-dom';
 import Location from '../../../Hooks/Location';
 import useAuth from '../../../Hooks/useAuth'
 const Register = () => {
@@ -28,9 +29,12 @@ const Register = () => {
     }
 
     return (
-        <div className="container my-5">
+        <div className="w-50 mx-auto my-5">
                 <div >
+                <div class="heading">
+                        <h1 class="text text-large">Sign Up</h1>
 
+                    </div>
                     <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Email address</label>
                     <input onChange={handleEmail} type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
@@ -41,8 +45,8 @@ const Register = () => {
                     <input onChange={handlePassword} type="password" class="form-control" id="exampleInputPassword1" />
                 </div>
                 <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                <p class="text text-normal">Existing user? <span><Link to="/login">Sign in</Link></span>
+                        </p>
                 </div>
                  <button type="submit" onClick={handleRegistration} class="btn btn-primary">Submit</button>
             </div>

@@ -13,6 +13,9 @@ import AuthProvider from './contex/AuthProvider';
 import Services from './components/Body/Services/Services';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Blog from './components/Body/Blog/Blog';
+import Appointment from './components/Body/Appointment/Appointment';
+import NotFound from './components/NotFound/NotFound';
+import Details from './components/Details/Details';
 function App() {
   return (
     <div className="">
@@ -27,12 +30,18 @@ function App() {
           <Route path="/home">
             <Home></Home>
           </Route>
-          <PrivateRoute path="/services">
-          <Services></Services>
+          <PrivateRoute path="/appointment">
+            <Appointment></Appointment>
+          </PrivateRoute>
+          <PrivateRoute path="/details/:serviceId">
+            <Details></Details>
           </PrivateRoute>
           <PrivateRoute path="/blog">
           <Blog></Blog>
           </PrivateRoute>
+          <Route path="/services">
+          <Services></Services>
+          </Route>
           <Route path="/about">
             <About></About>
           </Route>
@@ -44,6 +53,9 @@ function App() {
           </Route>
           <Route path="/register">
             <Register></Register>
+          </Route>
+          <Route exact path="*">
+            <NotFound></NotFound>
           </Route>
         </Switch>
         <Footer></Footer>

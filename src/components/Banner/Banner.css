@@ -15,14 +15,14 @@
   left: -400px;
 }
 .second-slide {
-  bottom: 220px;
-  left: 900px;
+  bottom: 100px;
+  left: 600px;
 }
 .carousel-caption h5 {
   font-size: 60px;
   text-transform: uppercase;
   margin-top: 25px;
-  font-weight: 900;
+  font-weight: 700;
 }
 .carousel-caption p {
   font-size: 18px;

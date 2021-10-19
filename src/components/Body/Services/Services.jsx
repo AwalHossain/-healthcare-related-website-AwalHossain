@@ -1,22 +1,27 @@
-import React, { useEffect, useState } from 'react';
+
+import useServiceces from '../../../Hooks/useServiceces';
 import Service from '../Service/Service';
 
 const Services = () => {
-    const [info, setInfo] =useState([]);
-    useEffect(()=>{
-        fetch('./services.json')
-        .then(resp => resp.json())
-        .then(data => setInfo(data))
-    },[])
+    // Custom hook being used here
+ const [info] = useServiceces()
     return (
+        // Services
         <div>
-        <div className="px-5">
-            <main class="page-content">
-            {
-                info.slice(0,6).map(loadData => <Service data={loadData}></Service>)
-            }
-            </main>
-        </div>
+             <div className="text-center my-5 ">
+                <h2 className="fw-bold">Why Choosing Health Coach</h2>
+                <p className="p-2">We handpick the best coaches and health experts from <br /> across the country to make sure you get the most personalized health care you deserve between those doctor visits.</p>
+           </div>
+            <div className="px-5">
+                <main className="page-content">
+
+                {
+                    info.map(loadData => <Service
+                        key={loadData.key}
+                        data={loadData}></Service>)
+                }
+                </main>
+            </div>
               
 
         </div>

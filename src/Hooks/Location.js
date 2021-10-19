@@ -1,4 +1,4 @@
-import { useHistory, useLocation } from "react-router";
+import {  useLocation } from "react-router";
 
 const Location =()=>{
     const location = useLocation();
