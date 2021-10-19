@@ -8,6 +8,10 @@ This project was bootstrapped with react. Live site:(https://healthcare-services
 - Our main goal to perform with organically as much as possible
 - We inspire people to get a healthy body by doing our course
 - We have lots option like yoga, excercise, meditation & diet section. So you can easily choose what you want
-  Our program sechdule
+ # The reason we are the best
   - Balance Body & Mind
-   -Physical Activity
+   - Physical Activity
+   - Fitness & Performance
+   - Exercise Program
+   - Healthy Daily Life
+   - Improving Healthd
