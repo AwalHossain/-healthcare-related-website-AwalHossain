@@ -9,7 +9,7 @@ const Services = () => {
         // Services
         <div>
              <div className="text-center my-5 ">
-                <h2 className="fw-bold">Why Choosing Health Coach</h2>
+                <h2 className="fw-bold">Why Choosing Our Services</h2>
                 <p className="p-2">We handpick the best coaches and health experts from <br /> across the country to make sure you get the most personalized health care you deserve between those doctor visits.</p>
            </div>
             <div className="px-5">

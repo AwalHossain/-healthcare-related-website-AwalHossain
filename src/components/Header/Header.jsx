@@ -38,7 +38,7 @@ const Header = () => {
                             <Link className="nav-link text-white"  to="/about">About</Link>
                             </li>
                             <li>{
-                              user?.email? <button onClick={logOut} className="px-5 fs-5 py-1"><Link to="/login">LogOut</Link></button> :
+                              user?.email?  <button onClick={logOut} className="px-5 fs-5 py-1"><Link to="/login">LogOut</Link><li>{user?.displayName}</li></button> :
                               <Link to="/login">                            <button className="px-5 fs-5 py-1 lowercase">Login</button></Link>
                               }</li>
                         </ul>

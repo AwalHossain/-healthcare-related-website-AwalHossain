@@ -17,7 +17,7 @@ const Details = () => {
     return (
         <div className="d-flex container my-5 justify-content-center">
             {/* Details & dynamic route */}
-            <div className="d-flex justify-content-center " >
+            <div className="d-md-flex justify-content-center " >
             <img src={logFile?.img} className="img-fluid" alt="..." />
             <div className="card-body">
                 <h5 className="card-title">{logFile?.title}</h5>

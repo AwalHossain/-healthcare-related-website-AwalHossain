@@ -2,6 +2,7 @@
   width: 383px;
   height: 637px;
   object-fit: none;
+  z-index: 0;
 }
 .height {
   width: 100%;
