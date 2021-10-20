@@ -6,7 +6,7 @@ const Details = () => {
     const {serviceId} = useParams();
     const [file, setFile] =useState([]);
     useEffect(()=>{
-        fetch('https://awalhossain.github.io/json-file/services.json')
+        fetch('https://awalhossain.github.io/host-file/service.json')
         .then(res => res.json())
         .then(data => setFile(data))
     },[])
@@ -20,7 +20,7 @@ const Details = () => {
             <img src={logFile?.img} className="img-fluid" alt="..." />
             <div className="card-body">
                 <h5 className="card-title">{logFile?.title}</h5>
-                <p className="card-text">{logFile?.desc}.</p>
+                <p className="card-text">{logFile?.desc}</p>
                 <Link className="btn btn-primary" to="/appointment">Make an Appointment</Link>
             </div>
             </div>

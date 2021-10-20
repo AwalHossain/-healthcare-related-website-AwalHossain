@@ -10,7 +10,7 @@ const Service = (props) => {
         <img className="card-image " src={img} alt="mparticle" />
             <div className="card-body d-flex flex-column">
             <h2 className="title ">{title}</h2>
-            <p className=" card-text p-2">{desc}</p>
+            <p className=" card-text p-2">{desc.slice(0, 100)} ....</p>
             
 
             <div class="sticky-bottom mt-auto">

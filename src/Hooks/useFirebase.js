@@ -3,7 +3,7 @@ import { getAuth,signOut,createUserWithEmailAndPassword ,onAuthStateChanged , Go
 import initializeAuth from "../Firebase/firebase.init";
 
 initializeAuth();
-
+// Firebase authentication are being used here
 const useFirebase = () => {
     const [user, setUser] = useState({});
     const [isLoading, setLoading] = useState(true)
