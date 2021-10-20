@@ -11,8 +11,7 @@ const Details = () => {
         .then(data => setFile(data))
     },[])
     const logFile = file.find(data =>( data.id == serviceId))
-    console.log(logFile);
-    console.log(serviceId);
+
     
     return (
         <div className="d-flex container my-5 justify-content-center">

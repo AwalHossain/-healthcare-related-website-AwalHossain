@@ -1,3 +1,4 @@
+
 const firebaseConfig = {
     apiKey: "AIzaSyBUgbwGwtAKvs9PZevwMqsiNNdk0FLjHxc",
     authDomain: "healthcare-services-c55cf.firebaseapp.com",
@@ -7,5 +8,7 @@ const firebaseConfig = {
     appId: "1:624618545976:web:02a20bffb52f8c28bc17cd",
     measurementId: "G-VPZT9D5DF1"
   };
+
+
 
 export default firebaseConfig;

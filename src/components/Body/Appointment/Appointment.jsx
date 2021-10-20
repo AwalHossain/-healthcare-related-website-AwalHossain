@@ -2,8 +2,9 @@ import React from 'react';
 import './Appointment.css'
 const Appointment = () => {
     return (
-        <div className="container my-5">
-                <h1>Make an Appointment</h1>
+      <div>
+             <h1 className="text-center my-5">Make an Appointment</h1>
+          <div className="container my-5">
                 <form action="SEND ADDRESS" id="ft-form" method="POST" accept-charset="UTF-8">
   <fieldset>
     <legend>For person</legend>
@@ -60,6 +61,7 @@ const Appointment = () => {
   </div>
 </form>
         </div>
+      </div>
     );
 };
 

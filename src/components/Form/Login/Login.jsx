@@ -8,7 +8,6 @@ const Login = () => {
     const {signInWithGoogle,signInWithEmail} = useAuth();
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
-    console.log(Location());
     const path = Location();
     const history = useHistory();
     //Email
@@ -26,7 +25,7 @@ const Login = () => {
         signInWithEmail(email, password)
         .then((userCredential) => {
             // Signed in 
-            console.log(userCredential);
+
             history.push(path)
             // ...
           })
@@ -36,7 +35,7 @@ const Login = () => {
     const handleGoogleLog =()=>{
         signInWithGoogle()
         .then(result =>{
-            console.log(result.user);
+
             history.push(path)
         })
         .catch(error=>{
@@ -77,7 +76,7 @@ const Login = () => {
                     {/* Google Sign In */}
                     <div class="method">
                         <div class="method-control">
-                            <button onClick={handleGoogleLog}>Sign in with Google </button>
+                            <button className="bg-warning border-0 rounded-2 p-2 my-2 fw-bold" onClick={handleGoogleLog}>Sign in with Google <i class="fab fa-google"></i> </button>
                         </div>
                     </div>
 	        	</section>

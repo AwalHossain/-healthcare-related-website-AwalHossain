@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import './Package.css'
 const Package = () => {
     return (
-        <div className="container my-5">
-                    <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3  g-4">
+        <div className="my-5 ">
+                    <div className="row my-2 row-cols-1 row-cols-md-2 row-cols-lg-3  ">
              {/* <!-- Container for all products --> */}
-            <div className="d-flex   pack-card flex-column justify-content-center align-items-center">
+            <div className=" pack-card ">
                 <p className="text-gray fw-bold">Silver</p>
                 <h3>Single Deep Session</h3>
                 <div className="text-center">
@@ -27,7 +27,7 @@ const Package = () => {
                 </div>
             </div>
             {/* Package card-2 */}
-                <div className="d-flex flex-column pack-card justify-content-center align-items-center">
+                <div className="  pack-card ">
                     <p className="text-gray fw-bold">Gold</p>
                     <h3>4 Month Package</h3>
                     <div className="text-center">
@@ -48,7 +48,7 @@ const Package = () => {
                     </div>
                 </div>
             {/* Package card-3 */}
-                <div className="d-flex pack-card flex-column justify-content-center align-items-center">
+                <div className=" pack-card justify-content-center align-items-center">
                     <p className="text-gray fw-bold">Platinum</p>
                     <h3>6 Month Package</h3>
                     <div className="text-center">
