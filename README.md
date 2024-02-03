@@ -28,9 +28,9 @@ At Healthcoach, we are dedicated to your transformation. We serve as your person
 ## Technologies Used
 
 - **Frontend**: React
-- **Backend**: [Backend Technology]
-- **Database**: [Database Technology]
-- **Deployment**: [Deployment Platform]
+- **Backend**: NodeJS
+- **Database**: MongoDB
+- **Deployment**: Firebase
 - **Version Control**: Git, GitHub
 
 ## Getting Started
